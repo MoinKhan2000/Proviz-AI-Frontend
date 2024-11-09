@@ -1,0 +1,171 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Loader Styles */
+.loader {
+  border: 4px solid #f3f3f3;
+  /* Light grey */
+  border-top: 4px solid #3498db;
+  /* Blue */
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Gradient Outlined Text */
+.gradient-outline {
+  font-family: "Arial Black", sans-serif;
+  /* Ensure bold text */
+  text-transform: uppercase;
+  /* Text in uppercase */
+  font-weight: 900;
+  font-size: 10rem;
+  color: lavender;
+  /* No text fill */
+  -webkit-text-stroke-width: 2px;
+  /* Outline thickness */
+  -webkit-text-stroke-color: transparent;
+  /* Base transparency for clipping */
+  background: linear-gradient(to right, #00f, #a0f, #f0f, #f06, #f90);
+  /* Gradient */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* Transparent fill */
+}
+
+.swiper-pagination-bullet {
+  background-color: #ffffff p !important;
+  /* White color for inactive dots */
+  opacity: 0.6 ip !important;
+  /* Slight transparency */
+  transition: opacity 0.3s ease !important;
+  /* Smooth transition effect */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ffffff !important;
+  /* White color for active dot */
+  opacity: 1 !important;
+  /* Fully opaque */
+}
+
+/* Pagination Dots */
+.swiper-pagination-bullet {
+  background-color: #ffffff !important;
+  /* White color for inactive dots */
+  opacity: 0.6 !important;
+  /* Slight transparency */
+  transition: opacity 0.3s ease !important;
+  /* Smooth transition effect */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ffffff !important;
+  /* White color for active dot */
+  opacity: 1 !important;
+  /* Fully opaque */
+}
+
+/* Navigation Buttons */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #ffffff !important;
+  /* White color for navigation arrows */
+  opacity: 0.8 !important;
+  /* Slight transparency for a softer look */
+  transition: opacity 0.3s ease !important;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  opacity: 1 !important;
+  /* Fully opaque on hover */
+}
+
+@keyframes gradient-motion {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient-motion {
+  background: linear-gradient(
+    -45deg,
+    #6600ff,
+    #ff0080,
+    #00ccff,
+    #ffcc00,
+    #6600ff
+  );
+  background-size: 300% 300%;
+  animation: gradient-motion 6s ease infinite;
+}
+
+@keyframes gradient-motion {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient-motion {
+  animation: gradient-motion 8s ease infinite;
+}

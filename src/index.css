@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 10s linear infinite;
+}
+
+.clip-path-left-corner {
+  clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+}
+.clip-path-full {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
